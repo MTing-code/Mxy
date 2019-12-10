@@ -1,9 +1,13 @@
-git  config  - -global  user.name  “zhangsan”
-      git  config  - -global  user.email  27323259@qq.com
-
-
-1.创建一个项目 
-2.Git init---》》  版本库和工作区初始化变仓库 log
+概述：
+        Github属于分布式版本控制系统，分布式版本控制每一个人的电脑上都有一份完整的代码，不需要联网就能工作，控制新建分支合并分支的速度快，能方便的交换每一个人的修改，相当于一个中央服务器。
+登录：
+        git  config  - -global  user.name  “MTing-code”
+        git  config  - -global  user.email  123456789@qq.com
+初始化：
+        新建一个文件之后用 git init 初始化，就成了一个隐藏的 .git  版本库和工作区
+        版本库：stage暂存区&History版本库
+        工作方式：文件修改之后用 git add file 暂存正在stage中，再次用 git commit iimessage file提交的时候                               文件提交到当前分支，暂存区被清空。
+提交文件至暂存区
 3.git add Git.  工作区的文件加入到版本库 
 4.git commit -m "add a.java"  提交 
 5.Git reset --hard ******（Git提交的头指针）  重置(返回到某一个提交上)  
